@@ -1,26 +1,35 @@
-int LED = 13;
 String data;
 
-void initializeBluetooth();
-void readData();
-void playMusic();
-void stopMusic();
+#define TxD 1
+#define RxD 0
 
-void setup() 
-{   
+void initializeBluetooth();
+
+void setup()
+{
   initializeBluetooth();
 }
 
-void loop() 
+void loop()
 {
-  readData(); 
+  //readData();
+  sendMediaRequest();
 }
 
 void initializeBluetooth()
 {
-  Serial.begin(9600);  
-  Serial.println("Ready to connect\nDefualt password is 1234 or 0000"); 
+  // define pin modes:
+  pinMode(RxD, INPUT);
+  pinMode(TxD, OUTPUT);
 
-  // initialize led light:
-  pinMode(LED, OUTPUT);
+  // set baud rate:
+  Serial.begin(9600);
+}
+
+void sendMediaRequest()
+{
+  Serial.println("PLAY_PAUSE");
+  delay(2000);
+  Serial.println("VOLUME_UP");
+  delay(2000);
 }
