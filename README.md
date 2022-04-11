@@ -10,7 +10,7 @@ A Gesture-Based Media Controller that allows you to control your computer's medi
 4. Sending & Receving Serial Data via Bluetooth
 5. Controlling Windows Media based on the commands sent by the Arduino's Bluetooth module
 
-# Hardware:
+# Hardware
 * Arduino Uno
 * Bluetooth Module HC-05
 * Accelerometer & Gyroscope Sensor
