@@ -21,8 +21,8 @@ A Gesture-Based Media Controller that allows you to control your computer's medi
 * Jupyter Notebooks
 
 # Libraries Used
-* Serial
-* Win32API
+* PySerial
+* PyWin32
 
 # Authors
 * [Louai Bouzaher](https://github.com/louaibouzaher)
